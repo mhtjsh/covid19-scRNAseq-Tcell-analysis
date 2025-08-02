@@ -20,3 +20,13 @@ The high-level workflow included:
 3.  **Dimensionality Reduction & Clustering:** PCA and UMAP for visualization, followed by graph-based clustering to identify distinct cell populations.
     
 4.  **Differential Gene Expression & Functional Analysis:** Identification of DEGs between conditions and clusters, followed by Gene Ontology (GO) and pathway analysis to determine their biological significance.
+
+### **Results & Discussion**
+
+The analysis successfully identified significant differences between the immune cell profiles of healthy donors and convalescent COVID-19 patients. The following sections detail the progressive steps of dimensionality reduction, visualization, and functional interpretation.
+
+#### **Principal Component Analysis (PCA) and Dimensionality**
+
+After data integration, Principal Component Analysis (PCA) was performed to reduce the high-dimensional gene expression data into its most significant components of variation.
+
+The **elbow plot** below visualizes the standard deviation of each principal component (PC). We use this plot to select the number of significant PCs to include in downstream analysis, typically choosing the point where the variance explained begins to plateau (the "elbow"). This ensures we capture the majority of the biological signal while excluding technical noise present in higher-dimension PCs.
