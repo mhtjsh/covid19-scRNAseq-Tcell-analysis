@@ -9,13 +9,13 @@ The primary goal is to move beyond simple gene lists to understand the biologica
 
 The computational analysis was performed using the R-based Seurat package. The complete, commented code and step-by-step implementation details can be found in the
 
-Covid19 Patients Data analysis whole.ipynb notebook. Due to the high computational demand of the integration and normalization steps, the analysis was executed on a **Google Cloud Console VM**.
+`Covid19 Patients Data analysis whole.ipynb` notebook. Due to the high computational demand of the integration and normalization steps, the analysis was executed on a **Google Cloud Console VM**.
 
 The high-level workflow included:
 
 1.  **Data Loading & Quality Control:** Filtering of low-quality cells from the raw count matrices.
     
-2.  **Normalization & Integration:** Normalization via SCTransform and integration using Seurat's anchor-based workflow to correct for technical batch effects across the 7 unique patient samples.
+2.  **Normalization & Integration:** Normalization via `SCTransform` and integration using Seurat's anchor-based workflow to correct for technical batch effects across the 7 unique patient samples.
     
 3.  **Dimensionality Reduction & Clustering:** PCA and UMAP for visualization, followed by graph-based clustering to identify distinct cell populations.
     
