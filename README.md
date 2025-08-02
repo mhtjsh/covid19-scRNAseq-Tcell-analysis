@@ -88,14 +88,18 @@ Project Contributions and Future Directions
 
 ### **Contributions of This Project**
 
-While the original research by S-Y. Park et al. (2022) established the foundation for understanding post-COVID lung immunology, this project provides several unique contributions:
+This project serves as a focused re-analysis of the scRNA-seq data from the original paper, "Immune signatures underlying post-acute COVID-19 lung sequelae". While the original study performed a broad, multi-faceted investigation, this project deliberately narrows its scope to the bronchoalveolar lavage (BAL) T-cells to perform a more controlled and detailed comparison between healthy and convalescent individuals.
 
-1.  **A Reproducible and Open-Source Pipeline:** This project implements an independent analysis pipeline using robust, widely accepted methods (SCTransform and anchor-based integration). By providing the complete Jupyter Notebook, it offers a fully transparent and reproducible workflow that the community can use and build upon—a key contribution beyond the methods summary of a published paper.
+By employing a distinct and arguably more robust bioinformatic pipeline, this project not only validates the original findings but also contributes several new and more detailed insights:
+
+1.  **Advanced Normalization and Analysis:** This project utilized a more advanced normalization method, **SCTransform**, which uses a regularized negative binomial regression model to more effectively remove technical variability from sequencing depth. This choice was made with the goal of reducing the rate of false positives and increasing the reliability of the downstream differential gene expression results. The clustering was performed using Seurat's SNN modularity optimization-based approach.
     
-2.  **Focused Transcriptomic Interrogation:** While the original paper integrated multiple data types including TCR sequencing, this analysis performs a deep dive specifically into the transcriptomic data of lung T-cells. This focus allows for a more detailed characterization of the gene expression programs and functional pathways that are dysregulated post-infection.
+2.  **Identification of a Specific Inflammatory Signature:** A key new finding was the significant upregulation of pro-inflammatory genes like **IL32 and CCL5** in the cell clusters dominated by the COVID-19 recovery group. This points to a "consistent inflammatory response in the covid sequelae individuals," an aspect that was not explored in detail with the scRNA-seq data in the original publication. The clear separation of healthy and diseased cells in the UMAP plots provides strong visual support for this distinct transcriptomic state.
     
-3.  **Targeted Functional Analysis:** As demonstrated in the "Deeper Analysis" section, this project lays the groundwork for moving beyond bulk analysis to investigate pathway dysregulation within specific, annotated cell types (e.g., CD8+ T-cells), offering a more granular view of the immune response.
+3.  **Detailed and Corroborated Pathway Analysis:** By leveraging two distinct databases, **Reactome and DAVID**, this project provides a more granular and well-corroborated view of the dysregulated pathways. While validating the original paper's findings of T-cell activation, this dual analysis offers more specific mechanistic details. For instance, Reactome highlighted the "phosphorylation of CD3 and TCR zeta chains," while DAVID pointed to "T cytotoxic cell surface molecules," both of which are critical upstream events in T-cell activation and proliferation.
     
+
+In essence, this project acts as a valuable case study in how the re-analysis of publicly available data with alternative computational strategies can yield more detailed and novel biological insights, successfully building upon the foundational work of the original authors.
 
 ### **Future Directions**
 
