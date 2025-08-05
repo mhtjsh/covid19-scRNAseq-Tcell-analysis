@@ -105,22 +105,27 @@ The model is based on the interaction between three key populations derived from
 This system tells a story: a strong, lingering T-cell population damages lung cells while producing IFN-γ. Over time, without a persistent stimulus, the T-cell population wanes, and the immune system eventually resolves, but not before causing permanent tissue damage.
 
 #### **The Mathematical Model**
-
 This biological narrative is translated into the following system of equations:
 
-**Equation 1: Change in Lung Cells (dL/dt)**_The rate of lung cell destruction is proportional to the interaction between lung cells and T-cells.
+**Equation 1: Change in Lung Cells (dL/dt)**
+
+The rate of lung cell destruction is proportional to the interaction between lung cells and T-cells.
 
 $$
 \frac{dL}{dt} = -\gamma \cdot L \cdot T
 $$
 
-**Equation 2: Change in T-cells (dT/dt)**_The T-cell population is amplified by IFN-γ feedback but is primarily reduced by natural decay.
+**Equation 2: Change in T-cells (dT/dt)**
+
+The T-cell population is amplified by IFN-γ feedback but is primarily reduced by natural decay.
 
 $$
 \frac{dT}{dt} = \alpha \cdot T \cdot I - \delta_T \cdot T
 $$
 
-**Equation 3: Change in IFN-γ (dI/dt)**_IFN-γ concentration increases from T-cell production and decreases via natural deca
+**Equation 3: Change in IFN-γ (dI/dt)**
+
+IFN-γ concentration increases from T-cell production and decreases via natural deca
 
 $$
 \frac{dI}{dt} = \beta \cdot T - \delta_I \cdot I
