@@ -3,7 +3,7 @@
 
 This project investigates the persistent immune alterations in the lungs of COVID-19 survivors by analyzing single-cell RNA sequencing (scRNA-seq) data. Building on the findings from the original study, "Immune signatures underlying post-acute COVID-19 lung sequelae", this analysis identifies and interprets the functional significance of differentially expressed genes (DEGs) to characterize the immune cell populations associated with post-acute COVID-19 complications.
 
-The primary goal is to move beyond simple gene lists to understand the biological pathways that remain dysregulated in convalescent patients, contributing to a deeper understanding of Post-Acute Sequelae of COVID-19 (PASC).
+The primary goal is to move beyond simple gene lists to understand the biological pathways that remain dysregulated in convalescent patients, contributing to a deeper understanding of Post-Acute Sequelae of COVID-19 (PASC). To explore the long-term consequences of these findings, this project culminates in the development of a hypothesized Ordinary Differential Equation (ODE) model that simulates the dynamics of lung damage and immune resolution.
 
 ### Analysis Pipeline
 
