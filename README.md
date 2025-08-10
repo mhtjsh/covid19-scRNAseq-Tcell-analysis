@@ -60,7 +60,7 @@ Further clustering identified multiple distinct cell populations, suggesting sig
     <img width="700" height="450" alt="umap and heatmap clusters" src="https://github.com/user-attachments/assets/cc8cdc23-eeab-406a-a9bf-c53a0eab4f91" />
     </br>
     <em><strong>Figure:</strong></em> To the left is a UMAP of our integrated dataset, grouped by Seurat-determined clusters. To
-the right is a heat map of the top 5 DEGs in each cluster.
+the right is a heat map of the top 10 DEGs in each cluster.
 </p>
 
 Further analysis of the Seurat-determined clusters reveals significant immunological shifts. We identified several clusters composed almost exclusively of cells from the COVID-19 recovery group. Critically, within these patient-specific clusters, we observed high expression of the cell markers **`CD8A`** and **`NKG7`**. This finding indicates a persistent and localized population of **CD8+ T-cells and Natural Killer (NK) cells** in the lungs of convalescent patients. This aligns with the "abnormal CD8+ T cell population" discussed in the original paper and suggests these cells are key drivers of the tissue damage associated with PASC.
